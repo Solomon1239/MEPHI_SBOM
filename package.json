@@ -1,0 +1,20 @@
+{
+  "name": "sbom-demo",
+  "version": "1.0.0",
+  "description": "Demo project for SBOM + OWASP Dependency-Check + OWASP Dependency-Track + GitHub Actions",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js --url https://example.com --pick title",
+    "test": "node test/app.test.js",
+    "sbom": "npx @cyclonedx/cyclonedx-npm --output-format JSON --output-file sbom/bom.json"
+  },
+  "dependencies": {
+    "axios": "0.21.0",
+    "lodash": "4.17.20",
+    "minimist": "0.0.8"
+  },
+  "devDependencies": {
+    "@cyclonedx/cyclonedx-npm": "^4.1.0"
+  }
+}

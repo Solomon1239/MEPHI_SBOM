@@ -1,0 +1,12 @@
+node_modules/
+.cache/
+
+# Generated SBOM
+sbom/bom.json
+
+# Generated reports (kept as artifacts in CI)
+reports/dependency-check/*
+!reports/dependency-check/.gitkeep
+
+reports/dependency-track/*
+!reports/dependency-track/.gitkeep
