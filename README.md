@@ -22,3 +22,4 @@ docker compose up -d
 Workflow запускается только на Pull Request и сохраняет артефакты на 7 дней:
 - SBOM (sbom/bom.json)
 - отчёты Dependency-Check (reports/dependency-check/*)
+
